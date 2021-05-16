@@ -1,14 +1,14 @@
 Vue.component('list', {
   template: `
-    <ol class="list-group list-group-numbered">
+    <ol class="list-group">
       <li 
-        class="list-group-item d-flex justify-content-between align-items-start"
+        class="list-group-item d-flex justify-content-between align-items-center"
         v-for="(currency, index) in currencies"
         :key="'C' + 1 + currency.name"
       >
         <img
           class="rounded img-fluid"
-          style="width: 30px"
+          style="width: 50px"
           :src="getCurrencyImage(currency)"
         >
         <div class="ms-2 me-auto">
